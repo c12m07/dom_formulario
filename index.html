@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desafío del Dom</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <!-- Dado el código HTML a continuación termina de rellenarlo para tras rellenar los campos de nombre y apellido y hacer clic en enviar, estos datos aparezcan en la pantalla «hola nombre apellidos, gracias por rellenar el formulario de LarnU». -->
+  <section class="container">
+
+    <div class="container__form">
+      <form action="#saludo">
+        <label for="nombre">Nombre</label><input type="text" id="nombre" />
+        <label for="apellido">Apellido</label><input type="text" id="apellido" />
+        <input type="submit" value="Rellenar datos" onclick="enviarSaludo()" />
+      </form>
+    </div>
+
+    <div id="container__saludo" class="container__saludo">
+      <p id="saludo"></p>
+    </div>
+  </section>
+
+  <script>
+
+    function enviarSaludo() {
+      let container = document.getElementById('container__saludo')
+      let nombre = document.getElementById("nombre");
+      let apellido = document.getElementById("apellido");
+      let saludo = document.querySelector("#saludo");
+      let texto = `Hola ${nombre.value} ${apellido.value}, gracias por rellenar el formulario de LarnU!`;
+
+      if (container.style.display === 'none') {
+        container.style.display = 'flex';
+      } else {
+        container.style.display = 'none';
+      }
+      saludo.innerHTML = texto;
+    }
+
+  </script>
+</body>
+
+</html>

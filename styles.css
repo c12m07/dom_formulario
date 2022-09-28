@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #2E4F54;
+}
+
+.container__form {
+  width: 30%;
+  height: 50vh;
+  padding: 35px 50px;
+  border-radius: 10px;
+  background-color: #F9FBF3;
+}
+
+.container__form form {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.container__form label {
+  color: #1F2330;
+  font-family: 'Concert One', cursive;
+  font-size: 2em;
+  font-weight: 500;
+  letter-spacing: 4px;
+  transition: all 700ms;
+}
+
+.container__form label:hover {
+  padding-left: 30px;
+  text-shadow: 0px 0px 5px #23627C;
+}
+
+.container__form input[type='text']{
+  outline: none;
+  width: 100%;
+  height: 30px;
+  border: 0px solid;
+  box-shadow: 0px 0px 3px #1F2330;
+  border-radius: 5px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: rgba(51, 51, 51, 0.637);
+}
+
+.container__form input[type='text']:focus{
+  box-shadow: 0px 0px 5px #23627C inset;
+  color: #1F2330;
+}
+
+.container__form input[type='submit']{
+  width: 65%;
+  height: 35px;
+  border-radius: 5px;
+  letter-spacing:3px;
+  margin: 0 auto;
+  border: 1px solid #23627C;
+  background-color: #2E4F54;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-family: 'Concert One', cursive;
+  transition: all 300ms;
+}
+
+.container__form input[type='submit']:hover{
+  background-color: #1F2330;
+  width: 65%;
+  letter-spacing: 1px;
+}
+
+.container__saludo{
+  display: none;
+  align-items: center;
+  width: 30%;
+  height: 50vh;
+  margin-left: 2%;
+  padding: 35px 50px;
+  background-color: #1F2330;
+  opacity: 0.8;
+  color: #F9FBF3;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Concert One', cursive;
+}
+
+/* #FBC400 */
+/* #F9FBF3 */
+/* #23627C */
+/* #2E4F54 */
+/* #1F2330 */
